@@ -45,6 +45,12 @@ Framework de desarrollo web de código abierto, escrito en Python, que respeta e
 **Ejercicio T2.3:**
 **¿Cómo analizar el nivel de carga de cada uno de los subsistemas en el servidor?**
 
+**Nagios** 
+Es un sistema de monitorización de red, máquinas y servicios. Permite vigilar los equipos (hardware) y los servicios en ejecución que se deseen. Una función interesante es la posibilidad de realizar la monitorización desde fuera, es decir, mediante túneles SSL cifrados o SSH podemos monitorizar sistemas sin estar físicamente cerca. Así mismo, cuenta con un sistema de alertas que no puede avisar en caso de que se cumplan unas reglas que especifiquemos, por el que no tenemos que estar constantemente atentos.
+
+**Munin**
+También es un sistema de monitorización de servidores. Su principal función es monitorizar constantemente los sistemas y extraer una serie de estadísticas sobre todos y cada uno de los recursos disponibles en las máquinas, así como de los servicios que ofertan. Estas estadísticas son accesibles via Web (por lo que tampoco necesitamos acceder al SO para poder obtener información). También permite la instalación de plugins que aumenten su funcionalidad.
+
 **Cacti** 
 Este sistema nos permite monitorizar y visualizar gráficas de toda la información de nuestro servidor y su red. Aprovecha RRDTool y esta basada en PHP y MySQL.
 
