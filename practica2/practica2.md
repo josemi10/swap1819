@@ -21,13 +21,13 @@ Pondremos el siguiente comando:
 
 	tar czf - ./hola/paquete.txt | ssh 192.168.1.102 'cat > ~/tar.tgz'
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica2/imagenes/tar.png)
 
 Desde la maquina-2 ejecutamos el comando para descomprimirlo:
 
 	tar -xvf tar.tgz
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica2/imagenes/tar2.png)
 
 Observamos que el paquete.txt lo tenemos.
 
@@ -41,19 +41,19 @@ Para clonar el contenido haremos uso de la herramienta rsync.Lo primero que debe
 
 Lo primero que tenemos que hacer es darle permiso al directorio donde vamos a clonar la información y en el directorio donde vamos a tenerlo.Además vamos a crear algunos ficheros para que podamos clonarlos.
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica2/imagenes/touch.png)
 
 Ahora ya podemos clonar la información escribiendo el siguiente comando:
 
 	rsync -avz -e ssh 192.168.1.100:/var/www/ /var/www/
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica2/imagenes/rsync.png)
 
 Ahora miramos desde la máquina-2 para comprobar que están los ficheros con el siguiente comando:
 
 	ls /var/www
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica2/imagenes/ls_s2.png)
 
 **3.Configurar el ssh para acceder a máquinas remotas sin contraseña**
 
@@ -65,16 +65,16 @@ Hacemos uso de los siguientes comandos:
 
 	ssh-keygen -b 4096 -t rsa
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica2/imagenes/keygen.png)
 
 	ssh-copy-id 192.168.1.100
 	chmod 600 ~/.ssh/authorized_keys
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica2/imagenes/ssh-copy-id.png)
 
 Para la maquina-2 tenemos que hacer lo mismo.Ahora ya podremos acceder de una máquina a otra sin la contraseña.
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica2/imagenes/ssh_sin_contrase%C3%B1a.png)
 
 
 **4.Establecer tareas en cron**
@@ -83,4 +83,4 @@ El uso de rsync puede ser más interesante con el uso del cron con el que podemo
 
 Lo único que tenemos que hacer es acceder al fichero /etc/crontab
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica2/imagenes/contrab.png)
