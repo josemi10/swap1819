@@ -13,12 +13,12 @@
 
 **1.Acceder por ssh de una máquina a otra**
 
-![imagen](https://github.com/josemi10/swap1819/practica1/imagenes/ssh_s1.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica1/imagenes/ssh_s1.png)
 
-![imagen](https://github.com/josemi10/swap1819/practica1/imagenes/ssh_s2.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica1/imagenes/ssh_s2.png)
 
 **2.Acceder mediante la herramienta curl desde una máquina a la otra**
 
-![imagen](https://github.com/josemi10/swap1819/practica1/imagenes/curl_s1.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica1/imagenes/curl_s1.png)
 
-![imagen](https://github.com/josemi10/swap1819/practica1/imagenes/curl_s2.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica1/imagenes/curl_s2.png)
