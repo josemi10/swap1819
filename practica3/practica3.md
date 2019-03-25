@@ -11,7 +11,7 @@
 
 Para ello tendremos esta organización en red:
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica3/imagenes/foto_1.png)
 
 Viendo la situación nos tendremos que crear dos nuevas máquinas virtuales o en mi caso que han sido clonadas y ademas en ellas nos hemos encargado de eliminar el apache2 para dejar libre el puerto80.
 
