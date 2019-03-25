@@ -1,15 +1,16 @@
-# JOSE MIGUEL PELEGRINA PELEGRINA
-# COMPAÑERO: JUAN SALVADOR MOLINA MARTÍN
+## JOSE MIGUEL PELEGRINA PELEGRINA
+## COMPAÑERO: JUAN SALVADOR MOLINA MARTÍN
 
 # PRACTICA 2: CLONAR INFORMACIÓN DE UN SITIO WEB
 
 ## Objetivos de la práctica
 
 **Los objetivos concretos de esta segunda práctica son:**
- 1.Aprender a copiar archivos mediante ssh
- 2.Clonar contenido entre máquinas
- 3.Configurar el ssh para acceder a máquinas remotas sin contraseña
- 4.Establecer tareas en cron
+
+	 1.Aprender a copiar archivos mediante ssh
+	 2.Clonar contenido entre máquinas
+	 3.Configurar el ssh para acceder a máquinas remotas sin contraseña
+	 4.Establecer tareas en cron
 
 **1.Aprender a copiar archivos mediante ssh**
 
