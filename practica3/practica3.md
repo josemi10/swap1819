@@ -25,13 +25,13 @@ En la máquina-3 que va ha actuar de balanceador de carga vamos a instalar el pr
 
 Ahora que lo tenemos instalado podemos hacerla configuración del balanceador. Para ello nos tenemos que ir al fichero **/etc/nginx/conf.d/default.conf**.
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica3/imagenes/nginx.png)
 
 	sudo systemctl start nginx
 
 Ahora hacemos un curl a las direcciones de cada máquina.
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica3/imagenes/curl.png)
 
 En las opciones de configuración **/etc/nginx/conf.d/default.conf** le asignamos como queremos establecer el trabajo entre las máquinas que tenemos.
 
@@ -51,7 +51,7 @@ Como en el caso anterior volveremos a instalar el balanceador.
 
 Ahora llevaremos a cabo la configuración del balanceador.
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica3/imagenes/haproxy2.png)
 
 Como fue el caso de **nginx** podemos modificar la configuración para repartir el trabajo.
 
@@ -65,11 +65,11 @@ Abrimos la máquina-cliente para lanzar la orden y ver el resultado.
 
 	ab -n 1000 -c 10 http://192.168.1.103/index.html
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica3/imagenes/haproxy.png)
 
 Con el **htop** vemos la máquina1 y máquina2
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica3/imagenes/htop1.png)
 
 **nginx**
 
@@ -77,8 +77,8 @@ Abrimos la máquina-cliente para lanzar la orden y ver el resultado.
 
 	ab -n 1000 -c 10 http://192.168.1.103/index.html
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica3/imagenes/ab.png)
 
 Con el **htop** vemos la máquina1 y máquina2
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica3/imagenes/htop2.png)
