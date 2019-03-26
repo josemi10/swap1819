@@ -13,7 +13,7 @@ Para ello tendremos esta organización en red:
 
 ![imagen](https://github.com/josemi10/swap1819/blob/master/practica3/imagenes/foto_1.png)
 
-Viendo la situación nos tendremos que crear dos nuevas máquinas virtuales o en mi caso que han sido clonadas y ademas en ellas nos hemos encargado de eliminar el apache2 para dejar libre el puerto80.
+Viendo la situación nos tendremos que crear dos nuevas máquinas virtuales y además en ellas nos hemos encargado de eliminar el apache2 para dejar libre el puerto80.
 
 En la máquina-3 que va ha actuar de balanceador de carga vamos a instalar el programa nginx.
 
@@ -23,7 +23,7 @@ En la máquina-3 que va ha actuar de balanceador de carga vamos a instalar el pr
 
 	sudo systemctl start nginx
 
-Ahora que lo tenemos instalado podemos hacerla configuración del balanceador.Para ello nos tenemos que ir al fichero **/etc/nginx/conf.d/default.conf**.
+Ahora que lo tenemos instalado podemos hacerla configuración del balanceador. Para ello nos tenemos que ir al fichero **/etc/nginx/conf.d/default.conf**.
 
 ![imagen]()
 
@@ -55,7 +55,7 @@ Ahora llevaremos a cabo la configuración del balanceador.
 
 Como fue el caso de **nginx** podemos modificar la configuración para repartir el trabajo.
 
-Lo interesante es someter a las máquinas virtuales a una alta carga de trabajo y ver como se reparten el trabajo.Para ello se va usar el **Apache Benchmark (ab)** en una máquina-4 que actúe como cliente.
+Lo interesante es someter a las máquinas virtuales a una alta carga de trabajo y ver como se reparten el trabajo. Para ello se va usar el **Apache Benchmark (ab)** en una máquina-4 que actúe como cliente.
 
 Para ello hemos creado otra máquina virtual de modo que tenemos 2 balanceadores para que uno de trabaje con nginx y el otro con **haproxy**.
 
