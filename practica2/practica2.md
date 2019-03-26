@@ -20,7 +20,7 @@ Nosotros enviaremos un directorio desde la maquina-1 a la maquina-2.Esta podremo
 
 Pondremos el siguiente comando:
 
-	tar czf - ./hola/paquete.txt | ssh 192.168.1.102 'cat > ~/tar.tgz'
+	tar czf - ./hola/paquete.txt | ssh 192.168.1.101 'cat > ~/tar.tgz'
 
 ![imagen](https://github.com/josemi10/swap1819/blob/master/practica2/imagenes/tar.png)
 
@@ -68,7 +68,7 @@ Hacemos uso de los siguientes comandos:
 
 ![imagen](https://github.com/josemi10/swap1819/blob/master/practica2/imagenes/keygen.png)
 
-	ssh-copy-id 192.168.1.100
+	ssh-copy-id 192.168.1.101
 	chmod 600 ~/.ssh/authorized_keys
 
 ![imagen](https://github.com/josemi10/swap1819/blob/master/practica2/imagenes/ssh-copy-id.png)
