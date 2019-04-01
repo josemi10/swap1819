@@ -23,13 +23,13 @@ Para generar un **certificado SSL** autofirmado en Ubuntu Server solo debemos ac
 
 	sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica4/imagenes/openssl.png)
 
 Editamos el archivo de configuración del sitio default-ssl:
 
 	sudo nano /etc/apache2/sites-available/default-ssl.conf
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica4/imagenes/default-ssl.png)
 
 Activamos el sitio default-ssl y reiniciamos apache:
 
@@ -41,11 +41,11 @@ Tenemos que copiar los archivos **apache.crt** y **apache.key** a la otra máqui
 
 **Máquina-2:**
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica4/imagenes/rsync-s2.png)
 
 **Máquina-balanceador:**
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica4/imagenes/rsync-nginx.png)
 
 Activamos el sitio default-ssl en la segunda máquina virtual y reiniciamos apache:
 
@@ -53,7 +53,7 @@ Activamos el sitio default-ssl en la segunda máquina virtual y reiniciamos apac
 
 	service apache2 reload
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica4/imagenes/a2ensite.png)
 
 Después, en el balanceador **nginx** debemos añadir lo siguiente al archivo /etc/nginx/conf.d/default.conf:
 	
@@ -70,10 +70,10 @@ Y ahora hacemos la petición
 
 	curl -k https://192.168.1.102/hola.html
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica4/imagenes/curl-https.png)
 
 **2.Configurar las reglas del cortafuegos para proteger la granja web.**
 
 Creamos el script para asegurar el acceso .Nos lo creamos en la máquina-1
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica4/imagenes/cortafuegos.png)
