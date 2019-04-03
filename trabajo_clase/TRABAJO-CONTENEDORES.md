@@ -79,7 +79,7 @@ https://elpuig.xeill.net/Members/vcarceler/articulos/contenedores-con-lxd-lxc
 
 https://profesorweb.es/wp-content/uploads/2017/10/tema3_iso_virtualizacion.pdf
 
-#Vagrant vs Docker - Comparación de alto nivel
+# Vagrant vs Docker - Comparación de alto nivel
 
 Vagrant utiliza una arquitectura mucho más simple que Docker. Utiliza máquinas virtuales para ejecutar entornos independientes de la máquina host. Esto se hace utilizando lo que se denomina software de "virtualización", como VirtualBox o VMware . Cada entorno tiene su propia máquina virtual y se configura mediante el uso de Vagrantfile. El Vagrantfile indica a Vagrant cómo configurar la máquina virtual y qué scripts deben ejecutarse para aprovisionar el entorno.
 
@@ -93,6 +93,6 @@ Docker, sin embargo, utiliza "contenedores" que incluyen su aplicación y todas 
 
 	La arquitectura de Docker es más difícil de entender y puede ser más difícil de poner en funcionamiento, pero es mucho más rápida, usa mucho menos CPU y RAM y potencialmente usa mucho menos espacio que las máquinas virtuales Vagrant.
 
-[enlace en línea](https://deliciousbrains.com/vagrant-docker-wordpress-development/)
+[Enlace](https://deliciousbrains.com/vagrant-docker-wordpress-development/)
 
 https://www.campusmvp.es/recursos/post/Docker-vs-Vagrant-diferencias-y-similitudes-y-cuando-usar-cada-uno.aspx
