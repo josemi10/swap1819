@@ -89,9 +89,9 @@ Docker, sin embargo, utiliza "contenedores" que incluyen su aplicación y todas 
 
 **¿Cuál es el resultado de todo esto?**
 
-	Vagrant es más fácil de entender y más fácil de poner en marcha, pero puede requerir muchos recursos (en términos de RAM y espacio).
+**Vagrant** es más fácil de entender y más fácil de poner en marcha, pero puede requerir muchos recursos (en términos de RAM y espacio).
 
-	La arquitectura de Docker es más difícil de entender y puede ser más difícil de poner en funcionamiento, pero es mucho más rápida, usa mucho menos CPU y RAM y potencialmente usa mucho menos espacio que las máquinas virtuales Vagrant.
+La arquitectura de **Docker** es más difícil de entender y puede ser más difícil de poner en funcionamiento, pero es mucho más rápida, usa mucho menos CPU y RAM y potencialmente usa mucho menos espacio que las máquinas virtuales Vagrant.
 
 [Enlace](https://deliciousbrains.com/vagrant-docker-wordpress-development/)
 
