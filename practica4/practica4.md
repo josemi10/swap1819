@@ -90,10 +90,8 @@ Y para ver la información de los puertos ponemos:
 
 	sudo iptables -L -n -v
 
-![imagen]()
-
 Desde la máquina-balanceador hacemos peticiones para comprobar los diferentes tipos de acceso.
 
-![imagen]()
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica4/imagenes/curl-https2.png)
 
-Podemos ver perfectamente que nos deja hacer peticiones https,a la hora de hacer un ping a la direccion 192.168.1.100 donde hemos ejecutado el script y no nos deja y que si nos deja acceder por ssh a nuestra máquina.
+Podemos ver perfectamente que nos deja hacer peticiones https.
