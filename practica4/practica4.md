@@ -86,10 +86,6 @@ Y ahora lo podemos ejecutar:
 
 	sudo ./configuracion.sh
 
-Y para ver la información de los puertos ponemos:
-
-	sudo iptables -L -n -v
-
 Desde la máquina-balanceador hacemos peticiones para comprobar los diferentes tipos de acceso.
 
 ![imagen](https://github.com/josemi10/swap1819/blob/master/practica4/imagenes/curl-https2.png)
