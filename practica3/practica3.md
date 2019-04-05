@@ -91,7 +91,7 @@ Como en el caso anterior volveremos a instalar el balanceador.
 
 Nos fijamos en el archivo de configuración en la dirección /etc/pound/pound.cfg y le añadimos la siguiente configuración.
 
-![imagen](https://github.com/josemi10/swap1819/blob/master/practica3/imagenes/pound.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica3/imagenes/configuracion-pound.png)
 
 Tenemos que reiniciar el servicio del pound.
 
@@ -99,3 +99,5 @@ Tenemos que reiniciar el servicio del pound.
 	systemctl restart pound
 
 Ahora solo tenemos que probar que nuestro balanceador funcione correctamente.
+
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica3/imagenes/pound.png)
