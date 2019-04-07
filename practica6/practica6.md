@@ -5,7 +5,7 @@
 
 ## Objetivos de la práctica
 
-El objetivo principal de esta práctica es configurar un servidor NFS para exportar un espacio en disco a los servidores finales (que actuarán como clientes-NFS).
+**El objetivo principal de esta práctica es configurar un servidor NFS para exportar un espacio en disco a los servidores finales (que actuarán como clientes-NFS).**
 
 Los objetivos concretos de esta práctica son:
 
