@@ -18,7 +18,7 @@ Desde la maquina-1 nos creamos una peque√±a base de datos utilizando MySQL.Adem√
 
 Para conectarnos a MySQL tenemos que:
 
-	mysql -uroot -p
+	mysql -u root -p
 
 ![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_1.png)
 
