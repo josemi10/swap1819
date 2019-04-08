@@ -20,7 +20,7 @@ Para conectarnos a MySQL tenemos que:
 
 	mysql -uroot -p
 
-[imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_1.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_1.png)
 
 Nos creamos la base de datos llamada contactos y dentro de ella nos crearemos la tablas.
 
@@ -29,7 +29,7 @@ Nos creamos la base de datos llamada contactos y dentro de ella nos crearemos la
 	create table datos(nombre varchar(100),tlf int);
 	show tables;
 
-[imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_2.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_2.png)
 
 Vemos que nuestras tablas están vacias por lo que insertamos datos de prueba.
 
@@ -41,7 +41,7 @@ Vemos que nuestras tablas están vacias por lo que insertamos datos de prueba.
 
 Y ahora podemos ver las tablas
 
-[imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_3.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_3.png)
 
 **Realizar la copia de seguridad de la BD completa usando mysqldump en lamáquina principal y copiar el archivo de copia de seguridad a la máquina secundaria.**
 
@@ -55,7 +55,7 @@ Desde la máquina-1 hacemos:
 	FLUSH TABLES WITH READ LOCK;
 	quit
 
-[imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_4.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_4.png)
 
 Guardamos los datos.
 
@@ -66,13 +66,13 @@ Como habíamos bloqueado las tablas, debemos desbloquearlas (quitar el “LOCK�
 	mysql> UNLOCK TABLES;
 	mysql> quit
 
-[imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_5.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_5.png)
 
 Desde la maquina-2.
 
 	scp maquina1:/tmp/ejemplodb.sql /tmp/
 
-[imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_6.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_6.png)
 
 Nos tenemos que crear la base de datos en la máquina-2:
 
@@ -82,9 +82,9 @@ Nos tenemos que crear la base de datos en la máquina-2:
 
 Ahora los exportamos.
 
-mysql -u root -p contactos < /tmp/ejemplodb.sql
+	mysql -u root -p contactos < /tmp/ejemplodb.sql
 
-[imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_7.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_7.png)
 
 Nos metemos en sql de la máquina-2.
 
@@ -92,7 +92,7 @@ Nos metemos en sql de la máquina-2.
 	use contactos;
 	select * from datos;
 
-[imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_8.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_8.png)
 
 **Restaurar dicha copia de seguridad en la segunda máquina (clonado manual de la BD), de forma que en ambas máquinas esté esa BD de forma idéntica.**
 
