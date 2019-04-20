@@ -59,7 +59,8 @@ Desde la máquina-1 hacemos:
 
 Guardamos los datos.
 
-mysqldump contactos -u root -p > /tmp/ejemplodb.sql
+	mysqldump contactos -u root -p > /tmp/ejemplodb.sql
+
 Como habíamos bloqueado las tablas, debemos desbloquearlas (quitar el “LOCK”):
 
 	mysql -u root –p
@@ -100,8 +101,6 @@ También podemos hacer la orden directamente usando un “pipe” a un ssh para 
 
 	mysqldump contactos -u root -p | ssh 192.168.1.102 mysql
 
-![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_9.png)
-
 **Realizar la configuración maestro-esclavo de los servidores MySQL para que la replicación de datos se realice automáticamente.**
 
 Tenemos la opción de configurar el demonio para hacer replicación de las BD sobre un esclavo a partir de los datos que almacena el maestro.
@@ -110,11 +109,11 @@ Se trata de un proceso automático que resulta muy adecuado en un entorno de pro
 
 Disponemos de la version 5.7.25.
 
-![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_10.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_9.png)
 
 Primero tenemos que configurar la información de /etc/mysql/mysql.conf.d/mysqld.cnf teniendo que comentar el parámetro #bind-address 127.0.0.1
 
-![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_11.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_10.png)
 
 Ahora tenemos que descomentar la el parámetro log_bin = /var/log/mysql/bin.log.
 
@@ -130,15 +129,15 @@ Guardamos el documento y reiniciamos el servicio:
 
 	/etc/init.d/mysql restart
 
-![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_12.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_11.png)
 
 Podemos volver al maestro(maquina-1) para crear un usuario y darle permisos de acceso para la replicación.
 
-![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_13.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_12.png)
 
 En el esclavo(maquina-2) entramos en mysql y le damos los datos del maestro.
 
-![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_14.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_13.png)
 
 y arrancamos el esclavo:
 
@@ -154,11 +153,11 @@ Ahora, si queremos asegurarnos de que todo funciona perfectamente y que el escla
 
 Vemos que la variable Seconds_Behind_Master es 0 y por lo tanto ya nos funciona la configuración de maestro-esclavo.
 
-![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_15.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_14.png)
 
 Ahora solo tenemos que introducir los datos y ver como se van replicando.
 
 Metemos datos de ejemplo y como podemos ver en la imagen vemos que se va replicando.
 
-![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_16.png)
+![imagen](https://github.com/josemi10/swap1819/blob/master/practica5/imagenes/captura_15.png)
 
