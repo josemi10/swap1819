@@ -22,15 +22,15 @@ En la máquina servidora(maquina-1 192.168.100) instalamos las herramientas nece
 
 A continuación, creamos la carpeta que vamos a compartir y cambiamos el propietario y permisos de esa carpeta:
 
-	mkdir /etc/dat/compartida
-	sudo chown nobody:nogroup /etc/dat/compartida/
-	sudo chmod -R 777 /etc/dat/compartida/
+	mkdir /etc/dat/carpeta_compartida
+	sudo chown nobody:nogroup /etc/dat/carpeta_compartida/
+	sudo chmod -R 777 /etc/dat/carpeta_compartida/
 
 ![imagen](https://github.com/josemi10/swap1819/blob/master/practica6/imagenes/captura_1.png)
 
 Ahora nos metemos en el fichero de control /etc/exports y ponemos:
 
-	/etc/dat/compartida/ 192.168.1.102(rw) 192.168.1.103(rw)
+	/etc/dat/compartida/ 192.168.1.104(rw) 192.168.1.105(rw)
 
 ![imagen](https://github.com/josemi10/swap1819/blob/master/practica6/imagenes/captura_2.png)
 
@@ -50,7 +50,7 @@ En los clientes (M1 y M2) debemos instalar los paquetes necesarios y crear el pu
 
 Ahora ya podemos montar la carpeta remota (la exportada en el servidor) sobre el directorio recién creado:
 
-	sudo mount 192.168.1.100:/etc/dat/compartida carpetacliente
+	sudo mount 192.168.1.100:/etc/dat/carpeta_compartida carpetacliente
 
 ![imagen](https://github.com/josemi10/swap1819/blob/master/practica6/imagenes/captura_4.png)
 
