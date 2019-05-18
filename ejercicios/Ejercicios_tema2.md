@@ -1,6 +1,6 @@
 # EJERCICIOS TEMA 2 
 
-**Ejercicio T2.1:**
+**Ejercicio 2.1**
  
 **Calcular la disponibilidad del sistema si tenemos dos réplicas de cada elemento (en total 3 elementos en cada subsistema).**
 
@@ -32,7 +32,7 @@ ISP3=99.75% + ((1-99.75%)*95%)=99.9875%
 
 AS=99.6625%*99.9%*99.9999999%*99.9992%*99.6625%*99.9999%*99.9999999999%*99.9875%=99.2135165%
 
-**Ejercicio T2.2:**
+**Ejercicio 2.2**
 **Buscar frameworks y librerías para diferentes lenguajes que permitan hacer aplicaciones altamente disponibles con relativa facilidad.**
 
 **Symfony** 
@@ -42,7 +42,7 @@ Framework PHP diseñado para optimizar el desarrollo de las aplicaciones web bas
 Framework de desarrollo web de código abierto, escrito en Python, que respeta el paradigma conocido como Model Template View.
 
 
-**Ejercicio T2.3:**
+**Ejercicio 2.3**
 **¿Cómo analizar el nivel de carga de cada uno de los subsistemas en el servidor?**
 
 **Nagios** 
@@ -55,7 +55,7 @@ También es un sistema de monitorización de servidores. Su principal función e
 Este sistema nos permite monitorizar y visualizar gráficas de toda la información de nuestro servidor y su red. Aprovecha RRDTool y esta basada en PHP y MySQL.
 
 
-**Ejercicio T2.4:**
+**Ejercicio 2.4**
 **Buscar ejemplos de balanceadores software y hardware (productos comerciales).** 
 
 **Nginx**
